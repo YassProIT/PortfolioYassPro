@@ -268,5 +268,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 console.log('🛡️  Portfolio de Yassine Belkacem chargé avec succès');
-console.log('💻 Expert en Cybersécurité | Master | Ethical Hacking');
+console.log('💻 Apprenti Cybersécurité | BTS SIO SISR | Gouvernance Cyber');
 console.log('🌐 Architecture multi-pages responsive et moderne');
