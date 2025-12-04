@@ -115,6 +115,7 @@ git push -u origin main
 ## 📧 Contact
 
 - Email : Yass.ProCyber@outlook.fr
-- LinkedIn : [Yassine WAAMAR](https://linkedin.com)
+- LinkedIn : [Yassine WAAMAR](https://www.linkedin.com/in/yassine-w-644a90248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 
-- GitHub : [yasspro](https://github.com)
+- GitHub : [YassProIT](https://github.com/YassProIT)
+
