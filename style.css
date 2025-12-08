@@ -531,9 +531,14 @@ main {
 }
 
 .tech-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+    padding: 40px;
+    background: rgba(0, 153, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
 }
 
 .tech-stack-title {
@@ -827,6 +832,21 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
     transition: width 0.5s ease;
+}
+
+.skill-status {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    background: rgba(0, 255, 0, 0.15);
+    border: 1px solid rgba(0, 255, 0, 0.4);
+    border-radius: 8px;
+    color: var(--success);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
 }
 
 /* ============= Projects Section ============= */
@@ -1661,3 +1681,59 @@ main {
 strong {
     color: var(--secondary);
 }
+
+/* ============= Tech Stack Section ============= */
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+    padding: 40px;
+    background: rgba(0, 153, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.tech-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 153, 255, 0.2);
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.tech-logo:hover {
+    background: rgba(0, 153, 255, 0.1);
+    border-color: rgba(0, 153, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 153, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.tech-logo img {
+    height: 60px;
+    width: auto;
+    max-width: 80px;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    background: transparent;
+}
+
+.tech-logo:hover img {
+    opacity: 1;
+}
+
+.tech-logo[title]:after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
