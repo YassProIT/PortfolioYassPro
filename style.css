@@ -567,6 +567,18 @@ main {
     font-size: 28px;
     transition: all 0.3s ease;
     cursor: default;
+    overflow: hidden;
+}
+
+.tech-icon img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    opacity: 0.85;
+}
+
+.tech-icon:hover img {
+    opacity: 1;
 }
 
 .tech-icon:hover {
